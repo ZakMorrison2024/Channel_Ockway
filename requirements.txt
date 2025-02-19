@@ -1,7 +1,0 @@
-flask
-flask_sqlalchemy
-werkzeug
-pillow
-waitress  
-gunicorn  
-python-dotenv
