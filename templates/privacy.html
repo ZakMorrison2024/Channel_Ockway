@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment Bulletin</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Channel Ockway</a>
+            <div class="navbar-nav">
+                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" href="/rules">Rules and Expectations</a>
+                {% if session['user'] %}
+                    <a class="nav-link" href="/logout">Logout</a>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+
+    <h3  class="my-4 text-center"><u> Privacy-Statement </u></h3>
+
+    <h4  class="my-4 text-center">Hey neighbors!</h4> 
+    <h5  class="my-4 text-center">This is a community bulletin board for our building, meant to help us share updates, events, and important info.</h5>
+
+    <p  class="my-4 text-center"><strong>What We Collect:</strong> We only collect the info you choose to share: posts, and contact details you provide. No tracking, no ads.</p>
+    
+    <p  class="my-4 text-center"><strong>How We Use It:</strong> Your info stays here, within our building's private system. It's only used for communication between residents.</p>
+    
+    <p  class="my-4 text-center"><strong>Who Can See It:</strong> Other USERS can see posts.</p>
+    
+    <p  class="my-4 text-center"><strong>Security:</strong> This board is self-hosted and not shared with third parties. However, please be mindful of what you post, as nothing online is ever 100% private.</p>
+    
+    <p  class="my-4 text-center"><strong>Questions?</strong> If you have concerns or suggestions, just reach out to me!</p>
+    
+    <p  class="my-4 text-center">Let's keep this space friendly and useful!</p>
+    
+
+</body>
+</html>
