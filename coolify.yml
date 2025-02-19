@@ -1,0 +1,11 @@
+services:
+  - name: Channel Ockway
+    type: docker
+    image: flask-app
+    env:
+      - FLASK_ENV=production
+      - SECRET_KEY=d59722190ce5f40fdfdb6ca5ffbb3be2d6e232743150ce01ae025142c286e46f
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data/bulletin.db:/app/bulletin.db
